@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #F2F2F2;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #CEECF5;
+}
+
+body {
+    background: url("images/background.jpg") no-repeat scroll center top / cover;
+    color: #FFFFFF;
+    font-family: turbinado-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Commissioner', sans-serif;
+    text-align: center;
+}
+
+main {
+    background: url("../img/left-pattern.png") no-repeat scroll top left/ 21%
+            auto,
+        url("../img/right-pattern.png") no-repeat scroll top right / 14% auto,
+        url("../img/bottom-pattern.png") no-repeat scroll left 58% bottom / 21%
+            auto;
+}
+
+.content-wrapper {
+    display: flex;
+    min-height: var(--app-height);
+}
+
+.janek-text {
+    position: absolute;
+    right: -91px;
+    top: 25%;
+    font-size: 38px;
+    font-family: "Gill Sans MT W01 Bold";
+    line-height: 1;
+}
+
+.birdy-text span {
+    transform: rotate(-90deg);
+    display: block;
+}
+
+.right-wrapper {
+    width: 100%;
+}
+
+.pre-save-wrapper {
+    padding: 8.625vw 0;
+    min-height: calc(var(--app-height) - 88px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-song,
+.on-spotify {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Commissioner', sans-serif;
+    line-height: 1;
+}
+
+.wherever-you-are {
+    font-size: 90px;
+    font-weight: 700;
+    font-family: 'Commissioner', sans-serif;
+    color: #2E9AFE;
+    line-height: 1;
+}
+
+.pre-save-button {
+    padding: 10px 0 0;
+}
+
+.pre-save-button a {
+    font-size: 24px;
+    display: inline-block;
+    width: 250px;
+    color: #3c8ab8;
+    border: 4px solid;
+    border-radius: 180px;
+    padding: 12px 0;
+    position: relative;
+}
+
+.pre-save-button a i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.pre-save-button a:hover {
+    background:  #3c8ab8;
+    color: #fff;
+    border-color:  #3c8ab8;
+}
+
+.social-wrapper {
+    padding-bottom: 15px;
+}
+.social-wrapper a {
+    display: inline-block;
+    margin-right: 30px;
+    vertical-align: middle;
+    font-size: 22px;
+}
+
+
+.social-wrapper a:last-child {
+    margin-right: 0;
+}
+
+.copyright-links {
+    padding-bottom: 10px;
+}
+
+@media only screen and (max-width: 1023px) {
+    main {
+        background: url('../img/mobile-pattern.png') no-repeat scroll left bottom 138px / 26% auto;
+    }
+
+    .content-wrapper {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .right-wrapper {
+        width: 100%;
+    }
+
+    .left-wrapper:after {
+        left: 10.3vw;
+        background: #fff;
+        width: 0.267vw;
+    }
+
+    .janek-text {
+        right: auto;
+        left: -1.8vw;
+        font-size: 9.6vw;
+        color: #fff;
+    }
+
+    .pre-save-wrapper {
+        padding: 220px 0;
+        min-height: calc(var(--app-height) - 84.8vw - 88px);
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pre-save-wrapper {
+        padding-top: 230px;
+        min-height: calc(var(--app-height) - 84.8vw - 107px);
+    }
+
+    .new-song,
+    .on-spotify {
+        font-size: 20px;
+    }
+
+    .wherever-you-are {
+        font-size: 40px;
+    }
+
+    .mobile-hide {
+        display: block;
+        font-size: 0;
+    }
+
+    .social-wrapper {
+        padding-bottom: 10px;
+    }
+
+    .pre-save-button {
+        padding: 25px 0 0;
+    }
+
+    .copyright-text{
+        font-family: 'Commissioner', sans-serif;
+    }
+
+    .wherever-you-are{
+        font-family: 'Commissioner', sans-serif;
+    }
+}
